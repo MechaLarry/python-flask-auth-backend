@@ -1,25 +1,73 @@
 // index.scss
+header {
+	width: 100%;
+	background-color:beige;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
 
 h1 {
 	text-align: center;
 	justify-content: center;
 }
+}
+
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+}
 
 .container {
-	max-width: 800px;
+	background-color: #0056b3;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	max-width: 400px;
+	width:100%;
 	margin: 50px auto;
 	text-align: center;
 
 	h1 {
 		font-size: 36px;
-		color: #333;
+		color: #14c540;
 		margin-bottom: 20px;
 	}
 
 	p {
 		font-size: 18px;
-		color: #666;
+		color: #540fad;
 		margin-bottom: 20px;
+	}
+	.input-field {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 5px;
+		border: 1px solid #ccc;
+		font-size: 16px;
+		box-shadow: border-box;
+
+		&:focus {
+			outline: none;
+			border-color: #0056b3;
+		}
+
+	}
+
+	.btn{
+		width: 100%;
+		padding: 10px;	
+		margin: 10px 0;
+		border: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+
 	}
 
 	.login-btn {
@@ -35,6 +83,20 @@ h1 {
 		&:hover {
 			background-color: #0056b3;
 		}
+
+		.register-btn {
+			padding: 10px 20px;
+			background-color: #11ec5a;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			text-decoration: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+	
+			&:hover {
+				background-color: #c8f110;
+			}
 	}
 	.logout-btn {
 		padding: 10px 20px;
@@ -50,4 +112,5 @@ h1 {
 			background-color: #0056b3;
 		}
 	}
+}
 }

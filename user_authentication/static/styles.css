@@ -1,57 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  color: #333;
+  margin-top: 50px;
 }
 
+/* Container for both Authentication and Dashboard */
 .container {
-  max-width: 800px;
+  max-width: 400px;
   margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields for Authentication */
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.login-btn {
+  background-color: #28a745; /* Green */
+}
+
+.login-btn:hover {
+  background-color: #218838;
+}
+
+.register-btn {
+  background-color: #17a2b8; /* Teal */
+}
+
+.register-btn:hover {
+  background-color: #138496;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Dashboard Page Styles */
+.dashboard-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.container h1 {
+.dashboard-container h1 {
   font-size: 36px;
   color: #333;
   margin-bottom: 20px;
 }
 
-.container p {
+.dashboard-container p {
   font-size: 18px;
   color: #666;
   margin-bottom: 20px;
 }
 
-.container .login-btn {
+/* View Herbal Remedies Button */
+.view-remedies-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #17a2b8; /* Teal */
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 10px 0;
   transition: background-color 0.3s ease;
 }
 
-.container .login-btn:hover {
-  background-color: #0056b3;
+.view-remedies-btn:hover {
+  background-color: #138496;
 }
 
-.container .logout-btn {
+/* Logout Button */
+.logout-btn {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #dc3545; /* Red */
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  -webkit-transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
   transition: background-color 0.3s ease;
 }
 
-.container .logout-btn:hover {
-  background-color: #0056b3;
+.logout-btn:hover {
+  background-color: #c82333;
 }
-/*# sourceMappingURL=styles.css.map */

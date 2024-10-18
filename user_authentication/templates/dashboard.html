@@ -1,11 +1,14 @@
 {% extends "base.html" %}
 
-{%block body%}
-<div class="container">
+{% block body %}
+<div class="dashboard-container">
     <h1>Welcome, {{ username }}!</h1>
     <p>This is your dashboard.</p>
+    
+    <!-- View Herbal Remedies Button -->
+    <a href="https://your-frontend-render-url.com" target="_blank" class="view-remedies-btn">View Herbal Remedies</a>
+    
+    <!-- Logout Button -->
     <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
 </div>
-
-
 {% endblock %}
